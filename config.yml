@@ -1,9 +1,9 @@
 home:
-  off: 43
+  switch_off: 43
   temperature:
     1bit: 61
     2bit: 63
     3bit: 65
     4bit: 67
   threshold: 3000
-  min_temp: 18
+  min_temp: 17

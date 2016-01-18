@@ -16,9 +16,11 @@ FSSM.monitor(fldr + 'tmp/','**/*') do
     hsh = update_action(base, file)
     unless hsh["temp"].nil? then
       hsh["freq"] = temp2freq(hsh["temp"])
-      client.send( OSC::Message.new( "/switch" , hsh["swt"]))
       client.send( OSC::Message.new( "/temperature" , hsh["freq"]))
       p hsh
+    end
+    unless hsh["swt"].nil? then
+      client.send( OSC::Message.new( "/switch" , hsh["swt"]))
     end
   end
 end
