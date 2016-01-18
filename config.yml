@@ -1,0 +1,27 @@
+home:
+  off: 43
+  temperature:
+    1bit: 61
+    2bit: 63
+    3bit: 65
+    4bit: 67
+  threshold: 3000
+  min_temp: 18
+upstairs:
+  off: 93
+  temperature:
+    1bit: 69
+    2bit: 71
+    3bit: 73
+    4bit: 75
+  threshold: 1100
+  min_temp: 16
+downstairs:
+  off: 115
+  temperature:
+    1bit: 141
+    2bit: 143
+    3bit: 145
+    4bit: 147
+  threshold: 1100
+  min_temp: 17
